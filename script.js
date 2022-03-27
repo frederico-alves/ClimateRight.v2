@@ -13,5 +13,15 @@ document.addEventListener('DOMContentLoaded', function(){
     //         behavior: 'smooth' 
     //     });    
     });
+
+    var btnsubmit = document.querySelector('#submit');
+
+    btnsubmit.addEventListener('click', function(event){
+     alert('FORM SUBMITED SUCCESSFULLY!');
+     document.getElementById("body").scrollIntoView({
+        behavior: 'auto'
+    });
+
+        });  
     
 });
