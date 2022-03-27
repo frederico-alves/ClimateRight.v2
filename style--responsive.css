@@ -1,0 +1,80 @@
+/*   ============================================== */
+/*   WEB DEVELOPMENT ASSIGNMENT SPRING 2022         */
+/*   WEB MERMAIDS: AKRITI, AUKSE, FREDERICO, RANIA  */
+/*   Last updated 26/03/2022                        */
+/*   ============================================== */
+
+/* ============================= */
+/* MEDIA QUERY MANAGER */
+/* ============================= */
+/*
+
+0 - 770px:      . Phone
+770 - 900px:    . Tablet portrait
+900 - 1200px:   . Tablet landscape
+[1200 - 1800]:  . *** STYLE--MAIN.CSS ***
+1800 px + :     . Big Desktop
+
+. phone
+. tab-port
+. tab-land
+. big-desktop
+
+1em = 16px
+770 / 16 = 48.125em
+900 / 16 = 56.25em
+1200 / 16 = 75em
+1800 / 16 = 112.5em
+
+*/
+
+/* ============================= */
+/* BIG DESKTOP */
+/* ============================= */
+@media only screen and (min-width: 112.5em) {
+
+	html {
+	font-size: 75%; /* 1 rem = 12px, 12/16=75% */
+	}
+
+	.image__container {
+		height: 33rem;
+	}
+
+}
+/* ============================= */
+/* TABLET LANDSCAPE */
+/* ============================= */
+@media only screen and (max-width: 75em) {
+
+	html {
+		font-size: 56.25%; /* 1 rem = 9px, 9/16=56.25% */
+	}
+
+}
+/* ============================= */
+/* TABLET PORTRAIT */
+/* ============================= */
+@media only screen and (max-width: 56.25em) {
+
+	html {
+		font-size: 50%; /* 1 rem = 8px, 8/16=50% */
+	}
+
+	.content__inner {
+		max-width: 95%;
+	}
+}
+
+/* ============================= */
+/* PHONE */
+/* ============================= */
+@media only screen and (max-width: 48.125em) {
+	.centered__xy {
+		width: 100%;
+	}
+
+	.content__inner {
+		max-width: 100%;
+	}
+}
