@@ -51,6 +51,10 @@
 		font-size: 56.25%; /* 1 rem = 9px, 9/16=56.25% */
 	}
 
+	.landpage__container {
+		width: 70%;
+	}
+
 }
 /* ============================= */
 /* TABLET PORTRAIT */
@@ -59,6 +63,10 @@
 
 	html {
 		font-size: 50%; /* 1 rem = 8px, 8/16=50% */
+	}
+
+	.landpage__container {
+		width: 85%;
 	}
 
 	.content__inner {
@@ -70,7 +78,7 @@
 /* PHONE */
 /* ============================= */
 @media only screen and (max-width: 48.125em) {
-	.centered__xy {
+	.landpage__container {
 		width: 100%;
 	}
 

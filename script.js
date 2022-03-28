@@ -6,12 +6,7 @@ document.addEventListener('DOMContentLoaded', function(){
     btnstart.addEventListener('click', function(event){
         document.getElementById("form_start").scrollIntoView({
             behavior: 'smooth'
-        });
-    //     window.scrollBy({
-    //         top: 100, 
-    //         left: 0, 
-    //         behavior: 'smooth' 
-    //     });    
+        });   
     });
 
     var btnsubmit = document.querySelector('#submit');
@@ -22,6 +17,6 @@ document.addEventListener('DOMContentLoaded', function(){
         behavior: 'auto'
     });
 
-        });  
+    });  
     
 });

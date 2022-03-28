@@ -68,19 +68,13 @@ a {
     max-width: 80%;
 }
 
-.centered__xy{
-    width: 50%;
-    /* position: fixed; */
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    z-index: 0;
-}
-
 fieldset {
     border-width: 0px
+}
+
+.general__button {
+    text-align: center;
+    margin-top: 6rem; 
 }
 
 /* .page > * {
@@ -90,10 +84,10 @@ fieldset {
 
 
 /* ============================= */
-/* HEADER__HERO                  */
+/* HEADER__LANDPAGE                  */
 /* ============================= */
 
-.hero {
+.landpage {
     background-color: var(--color-grey-dark);
 
     /* background-image: url('./img/background.png'); */
@@ -119,18 +113,21 @@ fieldset {
     /* position: relative; */
 }
 
-.hero__description {
+.landpage__container{
+    width: 50%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.landpage__description {
     color: var(--color-white);
     text-align: center;
     margin-top: 50px;
     font-size: 2.4rem;
     font-weight: 500;
     max-width: 820px;
-}
-
-.hero__button {
-    text-align: center;
-    margin-top: 6rem; 
 }
 
 /* START BUTTON */
@@ -183,6 +180,15 @@ fieldset {
 /* FORM                 */
 /* ============================= */
 
+.form {
+    width: 900px;
+    max-width: 100%;
+
+    min-height: 100vh;
+    padding-top: 50px;
+    z-index: 3;
+}
+
 .display--flex {
     display: flex;
 }
@@ -199,21 +205,12 @@ fieldset {
     margin-bottom: 20px;
 }
 
-.form {
-    width: 900px;
-    max-width: 100%;
-
-    min-height: 100vh;
-    padding-top: 50px;
-    z-index: 3;
-}
-
-.form--label {
+.dropdown--label {
     font-size: 2.5rem;
     width: 100px;
 }
 
-.form--control {
+.dropdown--control {
     width: 150px;
     text-align: left;
     padding-left: 15px;
@@ -227,7 +224,19 @@ fieldset {
     text-align: center;  
 }
 
-.feeling {
+/* ============================= */
+/* RADIO BARS                    */
+/* ============================= */
+
+.radio-bars {
+    width: 900px;
+    max-width: 100%;
+    margin: 0px auto;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.question-title {
     font-size: 25px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -235,20 +244,14 @@ fieldset {
 .signifiers {
     font-size: 15px;
 }
-
-.USER_INPUT {
-    width: 900px;
-    max-width: 100%;
-    margin: 0px auto;
-    text-align: center;
-    margin-top: 45px;
-}
   
-  .button-link {
+.button-link {
     text-decoration: none;
-  }
+}
+
+/* RADIO BARS OPTIONS */
   
-  .btns {
+.options {
     background-color: #ff9035;
     background-image: -webkit-linear-gradient(-370deg, #ff5a5a 0%, #fab44b 30%, #0ef2f4 70%, #0e0ff4 100%);
     background-image: -webkit-linear-gradient(350deg, #ff5a5a 0%, #fab44b 30%, #0ef2f4 70%, #0e0ff4 100%);
@@ -264,11 +267,13 @@ fieldset {
     box-shadow: 0 2px 4px -1px rgba(25, 25, 25, 0.2);
 
     margin-bottom: 40px;
-  }
-  .btns input {
+}
+
+.options input {
     display: none;
-  }
-  .btns label {
+}
+
+.options label {
     display: table;
     float: left;
     padding: 0;
@@ -277,15 +282,18 @@ fieldset {
     margin: 0;
     text-align: center;
     border-left: 1px solid rgba(0, 0, 0, 0.05);
-  }
-  .btns label:first-child {
+}
+
+.options label:first-child {
     border-left: none;
     border-radius: 40px 0 0 40px;
-  }
-  .btns label:last-child {
+}
+
+.options label:last-child {
     border-radius: 0 40px 40px 0;
-  }
-  .btns .btn {
+}
+
+.options .clickable {
     font-size: 19px;
     cursor: pointer;
     width: 100%;
@@ -297,13 +305,15 @@ fieldset {
     box-shadow: inset 0 30px 20px -20px rgba(255, 255, 255, 0.15);
     -webkit-transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transition: color 250ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
-  }
-  .btns .btn:hover {
+}
+
+.options .clickable:hover {
     box-shadow: inset 0 30px 30px -20px rgba(50, 50, 50, 0.02);
     -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
-  }
-  .btns .btn:after {
+}
+
+.options .clickable:after {
     content: '\2714';
     margin-left: -10px;
     display: inline-block;
@@ -313,14 +323,17 @@ fieldset {
     transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, -webkit-transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
     transition: margin 250ms cubic-bezier(0.6, -0.28, 0.735, 0.045) 100ms, transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22), -webkit-transform 250ms cubic-bezier(0.895, 0.03, 0.685, 0.22);
-  }
-  .btns .first {
+}
+
+.options .clickable--first {
     border-radius: 40px 0 0 40px;
-  }
-  .btns .last {
+}
+
+.options .clickable--last {
     border-radius: 0 40px 40px 0;
-  }
-  .btns input:checked + .btn {
+}
+
+.options input:checked + .clickable {
     color: white;
     text-shadow: none;
     background-image: -webkit-linear-gradient( bottom , rgba(25, 25, 25, 0) 65%, rgba(25, 25, 25, 0.08));
@@ -329,8 +342,9 @@ fieldset {
     box-shadow: inset 0 10px 50px rgba(25, 25, 25, 0.08);
     -webkit-transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 150ms;
     transition: color 500ms cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 150ms;
-  }
-  .btns input:checked + .btn:after {
+}
+
+.options input:checked + .clickable:after {
     margin-left: 12px;
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
@@ -339,10 +353,12 @@ fieldset {
     transition: margin 500ms, -webkit-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
     transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms, margin 500ms;
     transition: transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms, margin 500ms, -webkit-transform 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275) 250ms;
-  }
+}
   
 
-  .infoButton {
+
+
+  .help--button {
       color: var(--color-grey-extra);
       position: absolute;
       margin-left: 40px;
@@ -358,7 +374,7 @@ fieldset {
       box-shadow: 0 4px 6px -1px rgb(25 25 25 / 20%);
   }
 
-  .infoButton-btn-text {
+  .help--button-clickable-text {
     display: block;
     text-align: center;
     width: 30px;
@@ -368,7 +384,7 @@ fieldset {
     font-size: 15px;
 }
 
-.infoButton-container {
+.help--button-container {
     position: absolute;
     bottom: calc(-100% + 75px);
     right: 0;
@@ -379,7 +395,7 @@ fieldset {
     box-shadow: 0 2px 4px -1px rgb(25 25 25 / 20%);
 }
 
-.infoButton-container-message {
+.help--button-container-message {
     box-sizing: border-box;
     width: 300px;
     padding: 20px 20px;
@@ -396,31 +412,31 @@ fieldset {
     
 }
 
-/* .infoButton:hover {
+/* .help--button:hover {
     background-color: white;
 } */
 
-/* .infoButton:hover .infoButton-btn-text {
+/* .help--button:hover .help--button-btn-text {
     color: var(--color-grey-extra);
 } */
 
-.infoButton:hover .infoButton-btn,
-.infoButton_isActive .infoButton-btn {
+.help--button:hover .help--button-btn,
+.help--button_isActive .help--button-btn {
     cursor: pointer;
     border-top-right-radius: 0;
     transition: border-radius 200ms ease-in-out;
 }
 
-.infoButton:hover .infoButton-container,
-.infoButton_isActive .infoButton-container {
+.help--button:hover .help--button-container,
+.help--button_isActive .help--button-container {
     transform: scale(1);
     transition: transform 0ms linear;
 }
 
-.infoButton:hover
-.infoButton-container-message,
-.infoButton_isActive,
-.infoButton-container-message {
+.help--button:hover
+.help--button-container-message,
+.help--button_isActive,
+.help--button-container-message {
     transform: translate(0);
     opacity: 1;
 }
