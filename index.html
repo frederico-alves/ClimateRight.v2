@@ -1,6 +1,6 @@
 <!-- WEB DEVELOPMENT ASSIGNMENT SPRING 2022         -->
 <!-- WEB MERMAIDS: AKRITI, AUKSE, FREDERICO, RANIA  -->
-<!-- Last updated 28/03/2022 11:05                  -->
+<!-- Last updated 28/03/2022 12:00                  -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +18,7 @@
   <div class="landpage" style="background-image: url('./img/background.png');">
     <div class="landpage__container">
       <div class="logo" style="background-image: url('./img/logo.svg');"></div>
-        <h2 class="landpage__description">Climate Right is a personalised ventilation system designed to maximase personal comfort in a controlled indoor climate environment. In order to provide the best climate personalized for you please click START:</h2>
+        <h2 class="landpage__description">Climate Right is a personalised ventilation system designed to maximase personal comfort in a controlled indoor climate environment. In order to provide the best climate personalized for you please click START</h2>
         <div class="general__button">
           <button type="button" class="button button--start" id="start">START</button>
         </div>
@@ -28,11 +28,11 @@
   <div id="form_start" class="form content__inner">
     <form action="">
       <div class="please--select">
-        <h7>Please select your: </h7>
+        <h7>Please select</h7>
       </div>
       <!-- DROPDOWN - GENDER -->
       <div class="display--flex margin--bottom">
-        <label class="dropdown--label" for="fname">Gender:</label>
+        <label class="dropdown--label" for="fname">Gender</label>
         <select class="dropdown--control" id="exampleFormControlSelect1">
           <option disabled="" selected="" value="">Select option</option>
             <option>Male</option>
@@ -42,7 +42,7 @@
       </div>
       <!-- DROPDOWN - ZONE -->
       <div class="display--flex">
-        <label class="dropdown--label" for="fname">Zone:</label>
+        <label class="dropdown--label" for="fname">Zone</label>
           <select class="dropdown--control" id="exampleFormControlSelect1">
             <option disabled="" selected="" value="">Select option</option>
             <option>1</option>
@@ -60,6 +60,7 @@
 
       <!-- RADIO BARS -->
       <section class="radio-bars">
+        <!-- It trigers user emotional response -->
         <h7 class="question-title"">How are you feeling?</h7>
 
         <!-- SIGNIFIERS 1 HOT/COLD -->
@@ -118,8 +119,8 @@
 
       <!-- SIGNIFIERS 2 MUGGY/DRY -->
       <div class="space-between">
-        <h8 class="signifiers">VERY MUGGY</h8>
-        <h8 class="signifiers">VERY DRY</h8>
+        <h8 class="signifiers">VERY ENERGETIC</h8>
+        <h8 class="signifiers">VERY TIRED</h8>
       </div>
       <!-- GROUP 2 MUGGY/DRY -->
       <fieldset id="group2">
@@ -161,22 +162,25 @@
             </div>
             <div class="help--button-container">
               <div class="help--button-container-message">
-                <p>How do you feel the humidity in your zone right now?</p>
+                <p>How do you feel the polution level in your zone right now?</p>
                 <br>
-                <p>Very dry: you feel your throat is dry.</p>
-                <p>Very muggy: clammy skin.</p>
+                <p>Very tired: the polution is high, you feel sleepy, tired.</p>
+                <p>Very energetic: the polution is low, you feel fresh and full of energy.</p>
                 <br>
-                <p>Note: Humidity in this room can vary between 60% and 80%.</p>
+                <p>To give a good evaluation, lack of sleep or excessive physical activities should not be counted as factors of tiredness.</p>
               </div>
             </div>
           </span>
         </div>
       </fieldset><!-- GROUP 2 MUGGY/DRY -->
 
+      
+      <!-- SIGNIFIERS 3 MUGGY/DRY -->
       <div class="space-between">
-        <h8 class="signifiers">VERY ENERGETIC</h8>
-        <h8 class="signifiers">VERY TIRED</h8>
+        <h8 class="signifiers">VERY MUGGY</h8>
+        <h8 class="signifiers">VERY DRY</h8>
       </div>
+      <!-- GROUP 3 MUGGY/DRY -->
       <fieldset id="group3">
         <div class='options'>
           <label>
@@ -209,34 +213,34 @@
               <span class='clickable clickable--last'></span>
             </input>
           </label>
+          <!-- HELP-BUTTON 3 MUGGY/DRY -->
           <span class="help--button">
             <div class="help--button-clickable">
                 <span class="help--button-clickable-text">?</span>
             </div>
             <div class="help--button-container">
-              <div class="help--button-container-message">
-                            
-                  <p>How do you feel the polution level in your zone right now?</p>
-                  <br>
-                  <p>Very tired: the polution is high, you feel sleepy, tired.</p>
-                  <p>Very energetic: the polution is low, you feel fresh and full of energy.</p>
-                  <br>
-                  <p>To give a good evaluation, lack of sleep or excessive physical activities should not be counted as factors of tiredness.</p>
+              <div class="help--button-container-message">        
+                <p>How do you feel the humidity in your zone right now?</p>
+                <br>
+                <p>Very dry: you feel your throat is dry.</p>
+                <p>Very muggy: clammy skin.</p>
+                <br>
+                <p>Note: Humidity in this room can vary between 60% and 80%.</p>
               </div>
             </div>
           </span>
       </div>
-      </fieldset>
+      </fieldset><!-- GROUP 3 MUGGY/DRY -->
                 
       </section>
 
       <!-- SUBMIT BUTTON -->
-        <div class="general__button">
-            <button type="button" class="button button--submit" id="submit">SUBMIT</button>
-        </div>
+      <div class="general__button">
+          <button type="button" class="button button--submit" id="submit">SUBMIT</button>
+      </div>
 
-      </form>
-    </div>
+    </form>
+  </div>
 
 <!-- CUTOMISED JAVASCRIPT ADDED -->
 <script src="script.js"></script>
